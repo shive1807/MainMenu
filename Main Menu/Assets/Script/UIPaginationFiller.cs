@@ -14,6 +14,9 @@ public class UIPaginationFiller : MonoBehaviour
     [SerializeField] private int minSpacing = 1;
     private void Awake(){}
 
+    private void Start(){
+        SetPagination(11, 10);
+    }
     public void SetPagination(int paginationCount, int selectedPaginationIndex){
         
         _instantiatedImages ??= new();
